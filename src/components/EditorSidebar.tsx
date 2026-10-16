@@ -16,7 +16,7 @@ export function EditorSidebar() {
               type="text"
               value={resume.personal.fullName}
               onChange={(e) => updatePersonal({ fullName: e.target.value })}
-              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-black"
               placeholder="John Doe"
             />
           </div>
@@ -27,7 +27,7 @@ export function EditorSidebar() {
               type="text"
               value={resume.personal.professionalTitle || ''}
               onChange={(e) => updatePersonal({ professionalTitle: e.target.value })}
-              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-black"
               placeholder="Software Engineer"
             />
           </div>
@@ -38,7 +38,7 @@ export function EditorSidebar() {
               type="email"
               value={resume.personal.email || ''}
               onChange={(e) => updatePersonal({ email: e.target.value })}
-              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-black"
               placeholder="john@example.com"
             />
           </div>
@@ -49,7 +49,7 @@ export function EditorSidebar() {
               type="tel"
               value={resume.personal.phone || ''}
               onChange={(e) => updatePersonal({ phone: e.target.value })}
-              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-black"
               placeholder="+1 (555) 123-4567"
             />
           </div>
@@ -60,7 +60,7 @@ export function EditorSidebar() {
               type="text"
               value={resume.personal.location || ''}
               onChange={(e) => updatePersonal({ location: e.target.value })}
-              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-black"
               placeholder="New York, NY"
             />
           </div>
@@ -71,7 +71,7 @@ export function EditorSidebar() {
               type="url"
               value={resume.personal.linkedin || ''}
               onChange={(e) => updatePersonal({ linkedin: e.target.value })}
-              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-black"
               placeholder="https://linkedin.com/in/johndoe"
             />
           </div>
@@ -82,7 +82,7 @@ export function EditorSidebar() {
               type="url"
               value={resume.personal.portfolio || ''}
               onChange={(e) => updatePersonal({ portfolio: e.target.value })}
-              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-black"
               placeholder="https://johnportfolio.com"
             />
           </div>
@@ -93,7 +93,7 @@ export function EditorSidebar() {
               type="url"
               value={resume.personal.github || ''}
               onChange={(e) => updatePersonal({ github: e.target.value })}
-              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black"
+              className="w-full px-4 py-2 border border-black font-lato text-black placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-black"
               placeholder="https://github.com/johndoe"
             />
           </div>
