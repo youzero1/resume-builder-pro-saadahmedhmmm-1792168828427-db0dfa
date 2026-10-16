@@ -7,7 +7,7 @@ interface RichTextProps {
   linkClassName?: string;
 }
 
-export function RichText({ text, className: _className = '', linkClassName = 'text-black underline hover:opacity-70' }: RichTextProps) {
+export function RichText({ text, className: _className = '', linkClassName = 'text-blue-900 underline hover:opacity-70' }: RichTextProps) {
   if (!text) return null;
 
   const parts = parseTextWithLinks(text);
@@ -69,7 +69,7 @@ export function renderRichText(
         href={part.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-black underline hover:opacity-70"
+        className="text-blue-900 underline hover:opacity-70"
       >
         {part.text}
       </a>

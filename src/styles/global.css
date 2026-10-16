@@ -7,11 +7,11 @@
 
 @layer base {
   body {
-    @apply font-lato text-black bg-white;
+    @apply font-lato text-blue-900 bg-white;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-lato font-bold text-black;
+    @apply font-lato font-bold text-blue-900;
   }
 }
 
@@ -26,21 +26,21 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #000;
+  background: #2563eb;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #333;
+  background: #1d4ed8;
 }
 
 @layer components {
   .btn-primary {
-    @apply px-6 py-3 bg-black text-white rounded transition-all duration-200 font-medium hover:bg-gray-900 disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply px-6 py-3 bg-blue-600 text-white rounded transition-all duration-200 font-medium hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed;
   }
 
   .btn-secondary {
-    @apply px-6 py-3 bg-white text-black border border-black rounded transition-all duration-200 font-medium hover:bg-gray-50 disabled:opacity-50;
+    @apply px-6 py-3 bg-white text-blue-900 border border-blue-900 rounded transition-all duration-200 font-medium hover:bg-blue-50 disabled:opacity-50;
   }
 
   .btn-sm {
@@ -48,11 +48,11 @@
   }
 
   .input-field {
-    @apply w-full px-4 py-3 border border-black rounded focus:outline-hidden focus:ring-1 focus:ring-black bg-white text-black placeholder-gray-500;
+    @apply w-full px-4 py-3 border border-blue-900 rounded focus:outline-hidden focus:ring-1 focus:ring-blue-600 bg-white text-blue-900 placeholder-gray-500;
   }
 
   .section-header {
-    @apply flex items-center justify-between p-6 bg-white border-b border-black;
+    @apply flex items-center justify-between p-6 bg-white border-b border-blue-900;
   }
 
   .section-body {
@@ -64,11 +64,11 @@
   }
 
   .form-label {
-    @apply block text-sm font-semibold text-black mb-2;
+    @apply block text-sm font-semibold text-blue-900 mb-2;
   }
 
   .error-text {
-    @apply text-black text-sm mt-1 font-medium;
+    @apply text-red-600 text-sm mt-1 font-medium;
   }
 }
 
@@ -82,7 +82,7 @@
 }
 
 .draggable-section.drag-over {
-  @apply border-t-4 border-black;
+  @apply border-t-4 border-blue-600;
 }
 
 /* Animations */
@@ -103,7 +103,7 @@
 
 /* Rich text editor */
 .lexical-editor {
-  @apply rounded border border-black focus-within:ring-1 focus-within:ring-black;
+  @apply rounded border border-blue-900 focus-within:ring-1 focus-within:ring-blue-600;
 }
 
 .lexical-editor p {
@@ -128,7 +128,7 @@
 
 /* PDF preview */
 .pdf-preview {
-  @apply bg-white border border-black rounded overflow-hidden;
+  @apply bg-white border border-blue-900 rounded overflow-hidden;
 }
 
 /* Responsive preview */

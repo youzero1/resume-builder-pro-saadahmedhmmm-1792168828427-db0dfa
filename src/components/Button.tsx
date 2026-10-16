@@ -15,9 +15,9 @@ export function Button({
   const baseStyles = 'font-medium rounded transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed';
   
   const variants = {
-    primary: 'bg-black text-white hover:bg-gray-800',
-    secondary: 'bg-white text-black border-2 border-black hover:bg-gray-50',
-    danger: 'bg-white text-black border-2 border-black hover:bg-gray-100'
+    primary: 'bg-blue-600 text-white hover:bg-blue-700',
+    secondary: 'bg-white text-blue-900 border-2 border-blue-900 hover:bg-blue-50',
+    danger: 'bg-white text-blue-900 border-2 border-blue-900 hover:bg-blue-50'
   };
   
   const sizes = {

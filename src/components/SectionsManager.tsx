@@ -44,12 +44,12 @@ export function SectionsManager({ items, onReorder }: SectionsManagerProps) {
           onDragStart={e => handleDragStart(e, item.id)}
           onDragOver={handleDragOver}
           onDrop={e => handleDrop(e, item.id)}
-          className={`flex items-center gap-3 p-3 bg-white border-2 border-black rounded cursor-move transition-all ${
+          className={`flex items-center gap-3 p-3 bg-white border-2 border-blue-900 rounded cursor-move transition-all ${
             draggedId === item.id ? 'opacity-50' : ''
           }`}
         >
-          <GripVertical size={18} className="text-black" />
-          <span className="font-medium text-black">{item.label}</span>
+          <GripVertical size={18} className="text-blue-900" />
+          <span className="font-medium text-blue-900">{item.label}</span>
         </div>
       ))}
     </div>

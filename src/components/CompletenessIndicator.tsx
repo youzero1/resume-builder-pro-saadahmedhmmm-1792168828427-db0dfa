@@ -10,7 +10,7 @@ export default function CompletenessIndicator({ resume }: CompletenessIndicatorP
   const { percentage, completed, total } = getResumeCompleteness(resume);
 
   const getColor = () => {
-    if (percentage >= 80) return 'bg-gray-900';
+    if (percentage >= 80) return 'bg-blue-700';
     if (percentage >= 60) return 'bg-gray-700';
     if (percentage >= 40) return 'bg-gray-500';
     return 'bg-gray-400';

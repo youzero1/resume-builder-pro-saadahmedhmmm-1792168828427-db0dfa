@@ -8,11 +8,11 @@ export function PreviewPanel({ previewRef }: PreviewPanelProps) {
   const resume = useResumeStore((state) => state.resume);
 
   return (
-    <div className="w-1/2 bg-white overflow-y-auto border-l border-black">
+    <div className="w-1/2 bg-white overflow-y-auto border-l border-blue-900">
       <div ref={previewRef} className="p-12 bg-white max-w-4xl mx-auto">
-        <div className="font-lato text-black">
+        <div className="font-lato text-blue-900">
           {/* Header */}
-          <div className="border-b-2 border-black pb-6 mb-8">
+          <div className="border-b-2 border-blue-900 pb-6 mb-8">
             <h1 className="text-3xl font-bold">{resume.personal.fullName || 'Your Name'}</h1>
             {resume.personal.professionalTitle && (
               <p className="text-lg font-light mt-1">{resume.personal.professionalTitle}</p>
@@ -21,28 +21,28 @@ export function PreviewPanel({ previewRef }: PreviewPanelProps) {
             {/* Contact Info */}
             <div className="flex flex-wrap gap-6 mt-4 text-xs">
               {resume.personal.email && (
-                <a href={`mailto:${resume.personal.email}`} className="text-black hover:underline">
+                <a href={`mailto:${resume.personal.email}`} className="text-blue-900 hover:underline">
                   {resume.personal.email}
                 </a>
               )}
               {resume.personal.phone && (
-                <a href={`tel:${resume.personal.phone}`} className="text-black hover:underline">
+                <a href={`tel:${resume.personal.phone}`} className="text-blue-900 hover:underline">
                   {resume.personal.phone}
                 </a>
               )}
               {resume.personal.location && <span>{resume.personal.location}</span>}
               {resume.personal.linkedin && (
-                <a href={resume.personal.linkedin} target="_blank" rel="noopener noreferrer" className="text-black hover:underline">
+                <a href={resume.personal.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-900 hover:underline">
                   LinkedIn
                 </a>
               )}
               {resume.personal.portfolio && (
-                <a href={resume.personal.portfolio} target="_blank" rel="noopener noreferrer" className="text-black hover:underline">
+                <a href={resume.personal.portfolio} target="_blank" rel="noopener noreferrer" className="text-blue-900 hover:underline">
                   Portfolio
                 </a>
               )}
               {resume.personal.github && (
-                <a href={resume.personal.github} target="_blank" rel="noopener noreferrer" className="text-black hover:underline">
+                <a href={resume.personal.github} target="_blank" rel="noopener noreferrer" className="text-blue-900 hover:underline">
                   GitHub
                 </a>
               )}

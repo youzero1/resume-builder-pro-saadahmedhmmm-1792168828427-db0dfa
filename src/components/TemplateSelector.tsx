@@ -17,8 +17,8 @@ export function TemplateSelector({
   onSelectTemplate 
 }: TemplateSelectorProps) {
   return (
-    <div className="bg-white border-b border-black px-8 py-6">
-      <p className="text-sm font-semibold text-black mb-4">Select Template:</p>
+    <div className="bg-white border-b border-blue-900 px-8 py-6">
+      <p className="text-sm font-semibold text-blue-900 mb-4">Select Template:</p>
       <div className="flex flex-wrap gap-3">
         {templates.map(template => (
           <Button

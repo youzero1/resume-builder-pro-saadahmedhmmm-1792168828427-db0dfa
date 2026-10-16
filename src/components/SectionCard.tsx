@@ -27,16 +27,16 @@ export function SectionCard({
   isDragging = false
 }: SectionCardProps) {
   return (
-    <div className={`bg-white border-2 border-black rounded mb-8 transition-all duration-200 ${isDragging ? 'opacity-50' : ''}`}>
+    <div className={`bg-white border-2 border-blue-900 rounded mb-8 transition-all duration-200 ${isDragging ? 'opacity-50' : ''}`}>
       <div className="section-header">
         <div className="flex items-center gap-4 flex-1">
           <button
             onClick={onToggleExpand}
-            className="text-black hover:bg-gray-100 p-2 rounded transition-colors"
+            className="text-blue-900 hover:bg-blue-50 p-2 rounded transition-colors"
           >
             {isExpanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
           </button>
-          <h3 className="text-lg font-bold text-black">{title}</h3>
+          <h3 className="text-lg font-bold text-blue-900">{title}</h3>
         </div>
         
         <div className="flex items-center gap-3">
@@ -77,7 +77,7 @@ export function SectionCard({
       </div>
       
       {isExpanded && (
-        <div className="section-body border-t-2 border-black">
+        <div className="section-body border-t-2 border-blue-900">
           {children}
         </div>
       )}
